@@ -1,0 +1,107 @@
+{
+    "HTML Space Code": {
+        "prefix": "html_space",
+        "body": [
+            "&nbsp;",
+        ],
+        "description": "HTML space code"
+    },
+    "HTML Form": {
+        "prefix": "html_form",
+        "body": [
+            "<form action=\"$1\" method=\"post\">",
+            "    ",
+            "</form>",
+        ],
+        "description": "HTML basic form"
+    },
+    "HTML Form With Upload File": {
+        "prefix": "html_form_upload_file",
+        "body": [
+            "<form action=\"$1\" method=\"post\" enctype=\"multipart/form-data\">",
+            "    ",
+            "</form>",
+        ],
+        "description": "HTML form with upload file input"
+    },
+    "PHP Start Code in HTML": {
+        "prefix": "html_php_start",
+        "body": [
+            "<?php $1 ?>",
+        ],
+        "description": "Show PHP start & end code in HTML"
+    },
+    "PHP echo in HTML": {
+        "prefix": "html_php_echo",
+        "body": [
+            "<?php echo $1; ?>",
+        ],
+        "description": "PHP echo data in HTML"
+    },
+    "PHP If in HTML": {
+        "prefix": "html_php_if",
+        "body": [
+            "<?php if ($1) { ?>",
+            "    ",
+            "<?php } ?>",
+        ],
+        "description": "PHP if in HTML"
+    },
+    "PHP If...Else in HTML": {
+        "prefix": "html_php_if_else",
+        "body": [
+            "<?php if ($1) { ?>",
+            "    ",
+            "<?php } else { ?>",
+            "    ",
+            "<?php } ?>",
+        ],
+        "description": "PHP if else in HTML"
+    },
+    "PHP One Line If...Else in HTML": {
+        "prefix": "html_php_if_else_one_line",
+        "body": [
+            "<?php echo ($1) ? : ; ?>",
+        ],
+        "description": "PHP one line if else in HTML"
+    },
+    "PHP For Loop in HTML": {
+        "prefix": "html_php_for_loop",
+        "body": [
+            "<?php for (\\$i = 0; \\$i < count(\\$data_list); \\$i++) { ?>",
+            "    $1",
+            "<?php } ?>",
+        ],
+        "description": "PHP for loop in HTML"
+    },
+    "PHP Foreach Loop in HTML": {
+        "prefix": "html_php_foreach_loop",
+        "body": [
+            "<?php foreach (\\$data_list as \\$array_index => \\$data) { ?>",
+            "    $1",
+            "<?php } ?>",
+        ],
+        "description": "PHP foreach loop in HTML"
+    },
+    "Codeigniter3 echo base_url()": {
+        "prefix": "ci3_base_url",
+        "body": [
+            "<?php echo base_url('$1'); ?>",
+        ],
+        "description": "Codeigniter3 echo base_url()"
+    },
+    "Codeigniter3 echo site_url()": {
+        "prefix": "ci3_site_url",
+        "body": [
+            "<?php echo site_url('$1'); ?>",
+        ],
+        "description": "Codeigniter3 echo site_url()"
+    },
+    "Codeigniter3 Load View": {
+        "prefix": "ci3_load_view",
+        "body": [
+            "<php \\$this->load->view('$1'); ?>",
+        ],
+        "description": "Codeigniter3 load view"
+    },
+}

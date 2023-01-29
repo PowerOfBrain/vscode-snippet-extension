@@ -1,0 +1,27 @@
+{
+    "PHP Print Array With Nice View": {
+        "prefix": "php_print_r",
+        "body": [
+            "echo '<pre>';",
+            "print_r($1);",
+            "echo '</pre>';",
+        ],
+        "description": "PHP print array with nice view"
+    },
+    "PHP Declare Array With Variable": {
+        "prefix": "php_variable_array",
+        "body": [
+            "\\$variable_name = array(",
+            "    '' => '',",
+            ");",
+        ],
+        "description": "PHP declare variable & array"
+    },
+    "PHP One Line If...Else": {
+        "prefix": "php_if_else_one_line",
+        "body": [
+            "\\$variable_name = ($1) ? '' : '' ;",
+        ],
+        "description": "PHP one line if else"
+    },
+}

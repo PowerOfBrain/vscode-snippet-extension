@@ -1,0 +1,32 @@
+{
+    "name": "ci3-project-snippet",
+    "displayName": "CI3 + Bootstrap4 Project Snippet",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/html.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/bootstrap4.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/php.code-snippets"
+            },
+            {
+                "language": "php",
+                "path": "./snippets/codeigniter3.code-snippets"
+            }
+        ]
+    }
+}

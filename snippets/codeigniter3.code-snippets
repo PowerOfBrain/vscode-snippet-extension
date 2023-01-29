@@ -1,0 +1,211 @@
+{
+    "Codeigniter3 Load View": {
+        "prefix": "ci3_load_view",
+        "body": [
+            "\\$this->load->view('$1');",
+        ],
+        "description": "Codeigniter3 load view"
+    },
+    "Codeigniter3 Load Model": {
+        "prefix": "ci3_load_model",
+        "body": [
+            "\\$this->load->model('$1');",
+        ],
+        "description": "Codeigniter3 load model"
+    },
+    "Codeigniter3 Load Library": {
+        "prefix": "ci3_load_library",
+        "body": [
+            "\\$this->load->library('$1');",
+        ],
+        "description": "Codeigniter3 load library"
+    },
+    "Codeigniter3 Basic Controller Structure": {
+        "prefix": "ci3_basic_controller",
+        "body": [
+            "defined('BASEPATH') or exit('No direct script access allowed');",
+            "",
+            "class Classname extends CI_Controller",
+            "{",
+            "    public function __construct()",
+            "    {",
+            "        parent::__construct();",
+            "    }",
+            "",
+            "    $1",
+            "}",
+            "",
+        ],
+        "description": "Codeigniter3 basic controller"
+    },
+    "Codeigniter3 Basic CRUD Method In Controller": {
+        "prefix": "ci3_basic_crud_controller",
+        "body": [
+            "public function listing()",
+            "{",
+            "    $1",
+            "}",
+            "",
+            "public function add_form()",
+            "{",
+            "}",
+            "",
+            "public function add_process()",
+            "{",
+            "}",
+            "",
+            "public function edit_form(\\$data_id)",
+            "{",
+            "}",
+            "",
+            "public function edit_process()",
+            "{",
+            "}",
+            "",
+            "public function delete_process(\\$data_id)",
+            "{",
+            "}",
+        ],
+        "description": "Codeigniter3 basic CRUD method in controller"
+    },
+    "Codeigniter3 Custom Public Method": {
+        "prefix": "ci3_public_method",
+        "body": [
+            "public function method_name()",
+            "{",
+            "    $1",
+            "}",
+        ],
+        "description": "Codeigniter3 custom public method"
+    },
+    "Codeigniter3 Basic Model Structure": {
+        "prefix": "ci3_basic_model",
+        "body": [
+            "if (!defined('BASEPATH')) {",
+            "    exit('No direct script access allowed');",
+            "}",
+            "",
+            "class Modelname_model extends CI_Model",
+            "{",
+            "    public function __construct()",
+            "    {",
+            "        parent::__construct();",
+            "    }",
+            "",
+            "    $1",
+            "}",
+            "",
+        ],
+        "description": "Codeigniter3 basic model"
+    },
+    "Codeigniter3 Query Where": {
+        "prefix": "ci3_query_where",
+        "body": [
+            "\\$this->db->where('column_name', \\$data_value);",
+        ],
+        "description": "Codeigniter3 query where"
+    },
+    "Codeigniter3 Query Order By": {
+        "prefix": "ci3_query_order_by",
+        "body": [
+            "\\$this->db->order_by('column_name', 'DESC');",
+        ],
+        "description": "Codeigniter3 query order by"
+    },
+    "Codeigniter3 Query Get List Data": {
+        "prefix": "ci3_query_get_list_data",
+        "body": [
+            "\\$query = \\$this->db->get('table_name');",
+            "\\$list_data = \\$query->result();",
+        ],
+        "description": "Codeigniter3 query get list data"
+    },
+    "Codeigniter3 Query Get Data Detail": {
+        "prefix": "ci3_query_get_data_detail",
+        "body": [
+            "\\$query = \\$this->db->get('table_name');",
+            "\\$data = \\$query->row();",
+        ],
+        "description": "Codeigniter3 query get data detail"
+    },
+    "Codeigniter3 Query Get Total Data": {
+        "prefix": "ci3_query_get_total_data",
+        "body": [
+            "\\$query = \\$this->db->get('table_name');",
+            "\\$total_data = \\$query->num_rows();",
+        ],
+        "description": "Codeigniter3 query get total data"
+    },
+    "Codeigniter3 Query Insert Data": {
+        "prefix": "ci3_query_insert_data",
+        "body": [
+            "\\$insert_data = array(",
+            "    'column_name' => \\$data_value,",
+            ");",
+            "",
+            "\\$this->db->insert('table_name', \\$insert_data);",
+            "\\$data_id = \\$this->db->insert_id();",
+        ],
+        "description": "Codeigniter3 query insert data"
+    },
+    "Codeigniter3 Query Update Data": {
+        "prefix": "ci3_query_update_data",
+        "body": [
+            "\\$update_data = array(",
+            "    'column_name' => \\$data_value,",
+            ");",
+            "",
+            "\\$this->db->where('primary_key', \\$data_id);",
+            "\\$this->db->update('table_name', \\$update_data);",
+        ],
+        "description": "Codeigniter3 query update data"
+    },
+    "Codeigniter3 Query Delete Data": {
+        "prefix": "ci3_query_delete_data",
+        "body": [
+            "\\$this->db->where('primary_key', \\$data_id);",
+            "\\$this->db->delete('table_name');",
+        ],
+        "description": "Codeigniter3 query delete data"
+    },
+    "Codeigniter3 Call Session": {
+        "prefix": "ci3_call_session",
+        "body": [
+            "\\$this->session->$1;",
+        ],
+        "description": "Codeigniter3 call session"
+    },
+    "Codeigniter3 Set Session": {
+        "prefix": "ci3_set_session",
+        "body": [
+            "\\$this->session->set_userdata('session_name', \\$session_value);",
+        ],
+        "description": "Codeigniter3 set session"
+    },
+    "Codeigniter3 Unset Single Session": {
+        "prefix": "ci3_unset_single_session",
+        "body": [
+            "\\$this->session->unset_userdata('session_name');",
+        ],
+        "description": "Codeigniter3 unset single session"
+    },
+    "Codeigniter3 Unset Multiple Session": {
+        "prefix": "ci3_unset_multi_session",
+        "body": [
+            "\\$session_list = array(",
+            "    'session_name1',",
+            "    'session_name2',",
+            ");",
+            "",
+            "\\$this->session->unset_userdata(\\$session_list);",
+        ],
+        "description": "Codeigniter3 unset multi session"
+    },
+    "Codeigniter3 Destroy Session": {
+        "prefix": "ci3_destroy_session",
+        "body": [
+            "\\$this->session->sess_destroy();",
+        ],
+        "description": "Codeigniter3 destroy session"
+    },
+}
