@@ -1,6 +1,6 @@
 {
-    "name": "ci3-project-snippet",
-    "displayName": "CI3 + Bootstrap4 Project Snippet",
+    "name": "codeigniter-project-snippet",
+    "displayName": "Codeigniter3 + Bootstrap4 Project Snippet",
     "description": "",
     "version": "0.0.1",
     "engines": {
@@ -18,6 +18,10 @@
             {
                 "language": "html",
                 "path": "./snippets/bootstrap4.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/javascript-snippets"
             },
             {
                 "language": "php",

@@ -208,4 +208,18 @@
         ],
         "description": "Codeigniter3 destroy session"
     },
+    "Codeigniter3 echo base_url()": {
+        "prefix": "ci3_base_url",
+        "body": [
+            "<?php echo base_url('$1'); ?>",
+        ],
+        "description": "Codeigniter3 echo base_url()"
+    },
+    "Codeigniter3 echo site_url()": {
+        "prefix": "ci3_site_url",
+        "body": [
+            "<?php echo site_url('$1'); ?>",
+        ],
+        "description": "Codeigniter3 echo site_url()"
+    },
 }
