@@ -10,5 +10,5 @@ This extension is FREE to use.
 
 1. Auto generate HTML basic structure with Bootstrap 4.
 
-![image desc](/images/b4_basic_html_1.png)
-![image desc](/images/b4_basic_html_2.png)
+![image desc](https://github.com/PowerOfBrain/vscode-snippet-extension/raw/main/images/b4_basic_html_1.png)
+![image desc](https://github.com/PowerOfBrain/vscode-snippet-extension/raw/main/images/b4_basic_html_2.png)
